@@ -1,9 +1,9 @@
 import TaskItem from "./TaskItem";
 
-function Task({item}){
+function Task({item,onDeleteClick}){
   return <div>
     {item.map((task) => 
-      <TaskItem final={task}></TaskItem>
+      <TaskItem final={task} onDeleteClick={onDeleteClick}></TaskItem>
     )}
   </div>
 }
